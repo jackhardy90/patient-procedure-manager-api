@@ -8,7 +8,7 @@ require('dotenv').config();
 
 // TODO: add data access layer file
 
-const port = 3001;
+const port = process.env.PORT;
 const app = express();
 dotenv.config();
 app.use(bodyParser.json());
